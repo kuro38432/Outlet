@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : NetworkBehaviour {
 
 	public float speed = 6f;            // The speed that the player will move at
 
@@ -17,6 +18,11 @@ public class PlayerController : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
 		// Store the input axes.
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
