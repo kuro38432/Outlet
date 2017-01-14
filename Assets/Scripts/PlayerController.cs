@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public float speed = 6f;            // The speed that the player will move at.
+	public float JumpForce = 1;//200f;
+	public bool grounded = true;
 
 	Vector3 movement;                   // The vector to store the direction of the player's movement.
 	Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
@@ -20,12 +22,23 @@ public class PlayerController : MonoBehaviour {
 		// Store the input axes.
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
-		float j = Input.GetAxisRaw ("jump");
+		float j = Input.GetAxisRaw ("Jump");
 
 		// Move the player around the scene.
 		Move (h, v, j);
 	
 	}
+
+	/*void Update () 
+	{
+		if(!grounded && playerRigidbody.velocity.y == 0) {
+			grounded = true;
+		}
+		if (Input.GetButtonDown("Jump") && grounded == true) {
+			playerRigidbody.AddForce(transform.up*JumpForce);
+			grounded = false;
+		}
+	}*/
 
 	void Move (float h, float v, float j)
 	{
