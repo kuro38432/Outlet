@@ -91,6 +91,16 @@ NavMeshSettings:
     cellSize: 0.16666667
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &293050033 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1689972439700304, guid: 918a6d08e320e9d468243761f3ee964f,
+    type: 2}
+  m_PrefabInternal: {fileID: 547793297}
+--- !u!1 &459208549 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1689972439700304, guid: 918a6d08e320e9d468243761f3ee964f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1288503258}
 --- !u!1 &505996812
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +317,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 555706421}
   m_LocalRotation: {x: 0.3568814, y: 0.33349612, z: -0.1381386, w: 0.86158794}
-  m_LocalPosition: {x: -9.96, y: 14.65, z: -9.28}
+  m_LocalPosition: {x: -15.03, y: 16.3, z: -14.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -466,6 +476,49 @@ Prefab:
     - {fileID: 114929561682476106, guid: 918a6d08e320e9d468243761f3ee964f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 918a6d08e320e9d468243761f3ee964f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2031299617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2031299619}
+  - component: {fileID: 2031299618}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2031299618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031299617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1780246c59f8634786e7ccae375cc08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 555706425}
+  player1: {fileID: 293050033}
+  player2: {fileID: 459208549}
+--- !u!4 &2031299619
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031299617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.50543463, y: -2.149313, z: -17.396156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2032879680
 GameObject:
   m_ObjectHideFlags: 0
