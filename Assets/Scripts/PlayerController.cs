@@ -1,47 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class PlayerController : NetworkBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
-	public float speed = 6f;            // The speed that the player will move at
+    public float speed = 6f;            // The speed that the player will move at
 
-	Vector3 movement;                   // The vector to store the direction of the player's movement.
-	Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
+    Vector3 movement;                   // The vector to store the direction of the player's movement.
+    Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
 
-	void Awake ()
-	{
-		playerRigidbody = GetComponent <Rigidbody> ();
-	}
+    void Awake()
+    {
+        playerRigidbody = GetComponent<Rigidbody>();
+    }
 
 
-	void FixedUpdate ()
-	{
-        if (!isLocalPlayer)
+    void FixedUpdate()
+    {
+        float h = 0.0f;
+        float v = 0.0f;
+        float j = 0.0f;
+
+        if (gameObject.tag.Equals("Player1"))
         {
-            return;
+            // Store the input axes.
+            h = Input.GetAxisRaw("HorizontalP1");
+            v = Input.GetAxisRaw("VerticalP1");
+            j = Input.GetAxisRaw("JumpP1");
+        }
+        else
+        {
+            h = Input.GetAxisRaw("HorizontalP2");
+            v = Input.GetAxisRaw("VerticalP2");
+            j = Input.GetAxisRaw("JumpP2");
         }
 
-		// Store the input axes.
-		float h = Input.GetAxisRaw ("Horizontal");
-		float v = Input.GetAxisRaw ("Vertical");
-		float j = Input.GetAxisRaw ("Jump");
+        // Move the player around the scene.
+        Move(h, v, j);
 
-		// Move the player around the scene.
-		Move (h, v, j);
-	
-	}
+    }
 
-	void Move (float h, float v, float j)
-	{
-		// Set the movement vector based on the axis input.
-		movement.Set (h, j, v);
+    void Move(float h, float v, float j)
+    {
+        // Set the movement vector based on the axis input.
+        movement.Set(h, j, v);
 
-		// Normalise the movement vector and make it proportional to the speed per second.
-		movement = movement.normalized * speed * Time.deltaTime;
+        // Normalise the movement vector and make it proportional to the speed per second.
+        movement = movement.normalized * speed * Time.deltaTime;
 
-		// Move the player to it's current position plus the movement.
-		playerRigidbody.MovePosition (transform.position + movement);
-	}
+        // Move the player to it's current position plus the movement.
+        playerRigidbody.MovePosition(transform.position + movement);
+    }
 }
