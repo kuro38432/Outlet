@@ -13,8 +13,8 @@ public class CameraMovement : MonoBehaviour {
     // Moves the camera
     void FixedUpdate()
     {
-        //Vector3 average = new Vector3((player1.transform.position.x + player2.transform.position.x) / 2, 0.0f, (player1.transform.position.z + player2.transform.position.z) / 2 - 20.0f);
-        //mainCamera.transform.localPosition = Vector3.SmoothDamp(mainCamera.transform.localPosition, average, ref velocity, 0.2f);
+        Vector3 average = new Vector3((player1.transform.position.x + player2.transform.position.x) / 2 + 18.0f, 20.0f, (player1.transform.position.z + player2.transform.position.z) / 2 - 20.0f);
+        mainCamera.transform.localPosition = Vector3.SmoothDamp(mainCamera.transform.localPosition, average, ref velocity, 0.2f);
     }
 }
 
