@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 1689972439700304, guid: 918a6d08e320e9d468243761f3ee964f,
+  m_PlayerPrefab: {fileID: 1689972439700304, guid: 635b09623c237134ab83e928a946c525,
     type: 2}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 0
@@ -375,48 +375,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1234411451
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -3.8072643
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5.401413
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0.50141174
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0.50141174
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.49858433
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: -0.4985843
-      objectReference: {fileID: 0}
-    - target: {fileID: 4327999850771322, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7201eaf9b886d9e4ea826ed526a8b79e, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2032879680
 GameObject:
   m_ObjectHideFlags: 0
