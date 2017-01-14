@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114929561682476106}
   - component: {fileID: 114338569110226808}
   m_Layer: 0
-  m_Name: Player
+  m_Name: LocalPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,22 +145,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 99
-    i1: 91
-    i2: 9
-    i3: 98
-    i4: 60
-    i5: 35
-    i6: 113
-    i7: 52
-    i8: 171
-    i9: 131
-    i10: 233
-    i11: 40
-    i12: 169
-    i13: 70
-    i14: 197
-    i15: 37
+    i0: 145
+    i1: 138
+    i2: 109
+    i3: 8
+    i4: 227
+    i5: 32
+    i6: 233
+    i7: 212
+    i8: 104
+    i9: 36
+    i10: 55
+    i11: 97
+    i12: 243
+    i13: 238
+    i14: 150
+    i15: 79
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!136 &136101550860871198
