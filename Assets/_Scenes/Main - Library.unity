@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3317,7 +3317,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -19.72
+      value: -18.839
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3341,16 +3341,55 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
-      propertyPath: m_LocalScale.y
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.05
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2125140223 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100010, guid: c26584c45efa81446ae42566b2ca8cb5, type: 3}
+  m_PrefabInternal: {fileID: 2125140222}
+--- !u!65 &2125140224
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125140223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.2, y: 8, z: 1.94}
+  m_Center: {x: -0.09, y: 0, z: -0.06}
+--- !u!114 &2125140225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125140223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 518e5dcf21d2e5e4aadf50b5441d3600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2125140226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125140223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 279015d76ae98754c803104ac9e6ad75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
